@@ -1,0 +1,128 @@
+# depslib dependency file v1.0
+1570633274 source:u:\mes documents\lo21\projetlo21\initialize_iterative.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+
+1570536615 u:\mes documents\lo21\projetlo21\define.h
+
+1570633274 source:u:\mes documents\lo21\projetlo21\initialize_recursive.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+
+1570633151 u:\mes documents\lo21\projetlo21\initialize_recursive.h
+	"define.h"
+
+1570633174 source:u:\mes documents\lo21\projetlo21\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+	"initialize_recursive.h"
+	"initialize_iterative.h"
+	"afficherListe.h"
+
+1570633151 u:\mes documents\lo21\projetlo21\initialize_iterative.h
+	"define.h"
+
+1570632720 source:u:\mes documents\lo21\projetlo21\afficherliste.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+
+1570633151 u:\mes documents\lo21\projetlo21\afficherliste.h
+	"define.h"
+
+1570633276 source:d:\lo21\projetlo21\initialize_iterative.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+
+1570536616 d:\lo21\projetlo21\define.h
+
+1570633276 source:d:\lo21\projetlo21\initialize_recursive.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+
+1570633522 source:d:\lo21\projetlo21\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+	"initialize_recursive.h"
+	"initialize_iterative.h"
+	"afficherListe.h"
+
+1570633152 d:\lo21\projetlo21\initialize_recursive.h
+	"define.h"
+
+1570633152 d:\lo21\projetlo21\initialize_iterative.h
+	"define.h"
+
+1570633152 d:\lo21\projetlo21\afficherliste.h
+	"define.h"
+
+1570741632 source:c:\users\antoine planche\documents\l021\projetlo21\initialize_iterative.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+
+1570536616 c:\users\antoine planche\documents\l021\projetlo21\define.h
+
+1570740140 source:c:\users\antoine planche\documents\l021\projetlo21\initialize_recursive.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+
+1570741438 source:c:\users\antoine planche\documents\l021\projetlo21\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	"define.h"
+	"initialize_recursive.h"
+	"initialize_iterative.h"
+	"afficherListe.h"
+	"binaire_to_decimal.h"
+	"puissance.h"
+
+1570738211 c:\users\antoine planche\documents\l021\projetlo21\initialize_recursive.h
+	"define.h"
+
+1570740567 c:\users\antoine planche\documents\l021\projetlo21\initialize_iterative.h
+	"define.h"
+
+1570741427 c:\users\antoine planche\documents\l021\projetlo21\afficherliste.h
+	"define.h"
+
+1570739982 source:c:\users\antoine planche\documents\l021\projetlo21\puissance.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+
+1570741409 source:c:\users\antoine planche\documents\l021\projetlo21\afficherliste.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+
+1570741333 source:c:\users\antoine planche\documents\l021\projetlo21\binaire_to_decimal.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+	"puissance.h"
+	<math.h>
+
+1570739939 c:\users\antoine planche\documents\l021\projetlo21\puissance.h
+	"define.h"
+
+1570741308 c:\users\antoine planche\documents\l021\projetlo21\binaire_to_decimal.h
+	"define.h"
+
