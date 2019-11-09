@@ -2,6 +2,6 @@
 #define AFFICHERLISTE_H_INCLUDED
 #include "define.h"
 
-void afficherListe(Liste *liste,Indiv *individu);
+void afficherListe(liste l);
 
 #endif // AFFICHERLISTE_H_INCLUDED

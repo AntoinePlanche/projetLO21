@@ -2,6 +2,6 @@
 #define INITIALIZE_ITERATIVE_H_INCLUDED
 #include "define.h"
 
-void initialize_iterative(Liste *liste,Indiv *individu);
+liste initialize_iterative();
 
 #endif // INITIALIZE_ITERATIVE_H_INCLUDED

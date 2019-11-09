@@ -4,14 +4,14 @@
 #include "puissance.h"
 #include<math.h>
 
-int binaire_to_decimal(Liste *liste,Indiv *individu)
+int binaire_to_decimal(liste l)
 {
+    liste p=l;
     int result=0;
-    individu=liste->premier;
     for(int i=0;i<longIndiv;i++)
     {
-        result=result+puissance(i,individu->binaire);
-        individu=individu->suivant;
+        result=result+p->binaire*puissance(i,2);
+        p=p->suivant;
     }
     return result;
 }

@@ -2,13 +2,19 @@
 #include <stdlib.h>
 #include "define.h"
 
-void afficherListe(Liste *liste,Indiv *individu)
+void afficherListe(liste l)
 {
-    individu=liste->premier;
-    while (individu != NULL)
+    if (l == NULL)
     {
-        printf("%d ", individu->binaire);
-        individu = individu->suivant;
+        exit(EXIT_FAILURE);
+    }
+
+    Indiv *actuel = l;
+
+    while (actuel != NULL)
+    {
+        printf("%d -> ", actuel->binaire);
+        actuel = actuel->suivant;
     }
     printf("NULL\n");
 }

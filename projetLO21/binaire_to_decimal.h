@@ -2,6 +2,6 @@
 #define BINAIRE_TO_DECIMAL_H_INCLUDED
 #include "define.h"
 
-int binaire_to_decimal(Liste *liste,Indiv *individu);
+int binaire_to_decimal(liste l);
 
 #endif // BINAIRE_TO_DECIMAL_H_INCLUDED

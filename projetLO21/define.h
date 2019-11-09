@@ -12,11 +12,7 @@ struct Indiv
 
 };
 
-typedef struct Liste Liste;
-struct Liste
-{
-    Indiv *premier;
-};
+typedef Indiv *liste;
 
 
 #endif // DEFINE_H_INCLUDED

@@ -11,26 +11,22 @@
 
 int main(int argc, char ** argv)
 {
-    printf("%i ",puissance(2,5));
-    srand(time(NULL));
-    Liste *liste=malloc(sizeof(*liste));
-    Indiv *individu=malloc(sizeof(*individu));
-    liste->premier=individu;
-    if (liste == NULL || individu==NULL)
+    liste l=(Indiv*)malloc(sizeof(Indiv));
+    if(l == NULL)
     {
-        exit(EXIT_FAILURE);
+        EXIT_FAILURE;
     }
-
     if(0)
     {
-        initialize_recursive(longIndiv,liste,individu);
-        afficherListe(liste,individu);
-        printf("%d",binaire_to_decimal(liste,individu));
+        initialize_recursive(longIndiv,l);
+        afficherListe(l);
+        printf("%d",binaire_to_decimal(l));
     }
     else
     {
-        initialize_iterative(liste,individu);
-        afficherListe(liste,individu);
+        l=initialize_iterative();
+        afficherListe(l);
+        printf("%d",binaire_to_decimal(l));
     }
     return 0;
 }

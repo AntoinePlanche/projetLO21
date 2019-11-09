@@ -2,6 +2,6 @@
 #define INITIALIZE_RECURSIVE_H_INCLUDED
 #include "define.h"
 
-void initialize_recursive(int n,Liste *liste,Indiv *individu);
+liste* initialize_recursive(int n,liste l);
 
 #endif // INITIALIZE_RECURSIVE_H_INCLUDED

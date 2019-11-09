@@ -3,16 +3,18 @@
 #include <time.h>
 #include "define.h"
 
-void initialize_recursive(int n,Liste *liste,Indiv *individu)
+void initialize_recursive(int n,liste l)
 {
+    liste p=l;
     if (n!=0)
     {
-        individu->binaire=rand()%2;
-        individu=individu->suivant;
-        initialize_recursive(n-1,liste,individu);
+        p->binaire=rand()%2;
+        p=p->suivant;
+        initialize_recursive(n-1,p);
     }
     else
     {
-        individu->suivant=NULL;
+        p->suivant=NULL;
+        return l;
     }
 }
