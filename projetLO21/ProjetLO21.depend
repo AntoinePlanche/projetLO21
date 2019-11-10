@@ -139,12 +139,12 @@
 	"puissance.h"
 	<math.h>
 
-1573383552 /home/gregori/Documents/projects/projet-LO21/projetLO21/define.h
+1573384580 /home/gregori/Documents/projects/projet-LO21/projetLO21/define.h
 
 1573380672 /home/gregori/Documents/projects/projet-LO21/projetLO21/puissance.h
 	"define.h"
 
-1573383623 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/individu.c
+1573384408 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/individu.c
 	"individu.h"
 
 1573383486 /home/gregori/Documents/projects/projet-LO21/projetLO21/individu.h
@@ -152,13 +152,14 @@
 	<stdio.h>
 	"define.h"
 
-1573383695 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/main.c
+1573384876 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"define.h"
 	"individu.h"
 	"binaire_to_decimal.h"
+	"qualite.h"
 
 1573383454 /home/gregori/Documents/projects/projet-LO21/projetLO21/binaire_to_decimal.h
 	<stdlib.h>
@@ -168,4 +169,9 @@
 	<stdio.h>
 	<stdlib.h>
 	"define.h"
+
+1573384884 /home/gregori/Documents/projects/projet-LO21/projetLO21/qualite.h
+	<stdlib.h>
+	"define.h"
+	"binaire_to_decimal.h"
 

@@ -5,8 +5,7 @@
 #include "define.h"
 #include "individu.h"
 #include "binaire_to_decimal.h"
-
-#define LONGUEUR_INDIVIDU 8
+#include "qualite.h"
 
 //#define RECURSIF
 
@@ -19,7 +18,7 @@ int main(int argc, char ** argv){
 #else
     Individu l = creer_individu_iteratif(LONGUEUR_INDIVIDU);
     afficher_individu(l);
-    printf("%d\n", binaire_to_decimal(l));
+    printf("Valeur : %d\nQualité : %lf\n", binaire_to_decimal(l), qualite_individu(l));
 #endif
     return 0;
 }

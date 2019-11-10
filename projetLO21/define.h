@@ -1,6 +1,8 @@
 #ifndef DEFINE_H_INCLUDED
 #define DEFINE_H_INCLUDED
 
+#define LONGUEUR_INDIVIDU 8
+
 typedef unsigned char Bit;
 
 typedef struct _element_s Element;
