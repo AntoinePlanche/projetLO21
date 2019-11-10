@@ -6,12 +6,12 @@ Individu creer_individu_iteratif(int longueur){
         printf("creer_individu_iteratif() : allocation failed\n");
         exit(EXIT_FAILURE);
     }
-    p->valeur = rand() % 2;
+    p->valeur = rand() & 1; // % 2;
     Element* precedent = p;
     Element* suivant = NULL;
     for(int i = 1; i < longueur; i++){
         suivant = (Element*)malloc(sizeof(Element));
-        suivant->valeur = rand() % 2;
+        suivant->valeur = rand() & 1; // % 2;
         suivant->suivant = NULL;
         precedent->suivant = suivant;
         precedent = suivant;
@@ -25,7 +25,7 @@ static void _creer_recursif(int longueur, Element* p){
         if (suivant == NULL){
             printf("_creer_recursif : allocation failed");
         }
-        suivant->valeur = rand() % 2;
+        suivant->valeur = rand() & 1; // % 2;
         p->suivant = suivant;
         _creer_recursif(longueur - 1, suivant);
     } else {
@@ -38,7 +38,7 @@ Individu creer_individu_recursif(int longueur){
     if (p == NULL){
         printf("creer_individu_recursif : allocation failed\n");
     }
-    p->valeur = rand() % 2;
+    p->valeur = rand() & 1; // % 2;
     p->suivant = NULL;
     _creer_recursif(longueur, p);
     return p;

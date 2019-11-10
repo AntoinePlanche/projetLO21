@@ -132,7 +132,7 @@
 1573329406 c:\users\antoine planche\documents\l021\projetlo21\binaire_to_decimal.h
 	"define.h"
 
-1573383762 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/binaire_to_decimal.c
+1573399080 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/binaire_to_decimal.c
 	<stdio.h>
 	<stdlib.h>
 	"define.h"
@@ -174,4 +174,7 @@
 	<stdlib.h>
 	"define.h"
 	"binaire_to_decimal.h"
+
+1573384872 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/qualite.c
+	"qualite.h"
 
