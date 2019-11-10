@@ -1,18 +1,16 @@
 #ifndef DEFINE_H_INCLUDED
 #define DEFINE_H_INCLUDED
-#define longIndiv 8
 
 typedef unsigned char Bit;
 
-typedef struct Indiv Indiv;
-struct Indiv
-{
-    Bit binaire;
-    Indiv *suivant;
+typedef struct _element_s Element;
+struct _element_s{
+    Bit valeur;
+    struct _element_s* suivant;
 
 };
 
-typedef Indiv *liste;
+typedef Element* Individu;
 
 
 #endif // DEFINE_H_INCLUDED

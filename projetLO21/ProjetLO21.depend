@@ -5,6 +5,8 @@
 	<time.h>
 	"define.h"
 
+1573332080 
+
 1570536615 u:\mes documents\lo21\projetlo21\define.h
 
 1570633274 source:u:\mes documents\lo21\projetlo21\initialize_recursive.c
@@ -24,6 +26,8 @@
 	"initialize_recursive.h"
 	"initialize_iterative.h"
 	"afficherListe.h"
+
+1570633522 iste.h"
 
 1570633151 u:\mes documents\lo21\projetlo21\initialize_iterative.h
 	"define.h"
@@ -94,6 +98,8 @@
 	"binaire_to_decimal.h"
 	"puissance.h"
 
+1573331651 .h"
+
 1573329780 c:\users\antoine planche\documents\l021\projetlo21\initialize_recursive.h
 	"define.h"
 
@@ -124,5 +130,42 @@
 	"define.h"
 
 1573329406 c:\users\antoine planche\documents\l021\projetlo21\binaire_to_decimal.h
+	"define.h"
+
+1573383762 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/binaire_to_decimal.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+	"puissance.h"
+	<math.h>
+
+1573383552 /home/gregori/Documents/projects/projet-LO21/projetLO21/define.h
+
+1573380672 /home/gregori/Documents/projects/projet-LO21/projetLO21/puissance.h
+	"define.h"
+
+1573383623 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/individu.c
+	"individu.h"
+
+1573383486 /home/gregori/Documents/projects/projet-LO21/projetLO21/individu.h
+	<stdlib.h>
+	<stdio.h>
+	"define.h"
+
+1573383695 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+	"individu.h"
+	"binaire_to_decimal.h"
+
+1573383454 /home/gregori/Documents/projects/projet-LO21/projetLO21/binaire_to_decimal.h
+	<stdlib.h>
+	"define.h"
+
+1573381214 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/puissance.c
+	<stdio.h>
+	<stdlib.h>
 	"define.h"
 

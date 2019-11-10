@@ -31,23 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="afficherListe.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="afficherListe.h" />
 		<Unit filename="binaire_to_decimal.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="binaire_to_decimal.h" />
 		<Unit filename="define.h" />
-		<Unit filename="initialize_iterative.c">
+		<Unit filename="individu.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="initialize_iterative.h" />
-		<Unit filename="initialize_recursive.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="initialize_recursive.h" />
+		<Unit filename="individu.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

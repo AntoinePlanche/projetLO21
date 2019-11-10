@@ -1,32 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
-#include "define.h"
-#include "initialize_recursive.h"
-#include "initialize_iterative.h"
-#include "afficherListe.h"
-#include "binaire_to_decimal.h"
-#include "puissance.h"
 
-int main(int argc, char ** argv)
-{
-    liste l=(Indiv*)malloc(sizeof(Indiv));
-    if(l == NULL)
-    {
-        EXIT_FAILURE;
-    }
-    if(0)
-    {
-        initialize_recursive(longIndiv,l);
-        afficherListe(l);
-        printf("%d",binaire_to_decimal(l));
-    }
-    else
-    {
-        l=initialize_iterative();
-        afficherListe(l);
-        printf("%d",binaire_to_decimal(l));
-    }
+#include "define.h"
+#include "individu.h"
+#include "binaire_to_decimal.h"
+
+#define LONGUEUR_INDIVIDU 8
+
+//#define RECURSIF
+
+int main(int argc, char ** argv){
+    srand(time(NULL));
+#ifdef RECURSIF
+    creer_individu_recursif(LONGUEUR_INDIVIDU);
+    afficherListe(l);
+    printf("%d",binaire_to_decimal(l));
+#else
+    Individu l = creer_individu_iteratif(LONGUEUR_INDIVIDU);
+    afficher_individu(l);
+    printf("%d\n", binaire_to_decimal(l));
+#endif
     return 0;
 }
