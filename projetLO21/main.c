@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include "CrossTwoIndiv.h"
 #include "define.h"
 #include "individu.h"
 #include "binaire_to_decimal.h"
@@ -17,8 +17,13 @@ int main(int argc, char ** argv){
     printf("%d",binaire_to_decimal(l));
 #else
     Individu l = creer_individu_iteratif(LONGUEUR_INDIVIDU);
+    Individu m = creer_individu_iteratif(LONGUEUR_INDIVIDU);
     afficher_individu(l);
-    printf("Valeur : %d\nQualité : %lf\n", binaire_to_decimal(l), qualite_individu(l));
+    afficher_individu(m);
+    printf("Valeur : %d\nQualite : %lf\n", binaire_to_decimal(l), qualite_individu(l));
+    crossTwoIndiv(&l,&m);
+    afficher_individu(l);
+    afficher_individu(m);
 #endif
     return 0;
 }
