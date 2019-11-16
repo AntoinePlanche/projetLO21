@@ -6,6 +6,7 @@
 #include "individu.h"
 #include "binaire_to_decimal.h"
 #include "qualite.h"
+#include "Population.h"
 
 //#define RECURSIF
 
@@ -18,8 +19,8 @@ int main(int argc, char ** argv){
 #else
     Individu l = creer_individu_iteratif(LONGUEUR_INDIVIDU);
     Individu m = creer_individu_iteratif(LONGUEUR_INDIVIDU);
-    afficher_individu(l);
-    afficher_individu(m);
+    Population P =creer_population();
+    afficher_population(P);
     printf("Valeur : %d\nQualite : %lf\n", binaire_to_decimal(l), qualite_individu(l));
     crossTwoIndiv(&l,&m);
     afficher_individu(l);
