@@ -1,4 +1,6 @@
 #include "individu.h"
+#include "binaire_to_decimal.h"
+#include "qualite.h"
 
 Individu creer_individu_iteratif(int longueur){
     Element* p = (Element*)malloc(sizeof(Element));
@@ -45,6 +47,28 @@ Individu creer_individu_recursif(int longueur){
 }
 
 
+Individu copier_individu(Individu base){
+    if (base == NULL) return NULL;
+
+    Element* courant = base;
+    Element* copie = (Element*)malloc(sizeof(Element));
+    copie->valeur = courant->valeur;
+    copie->suivant = NULL;
+    courant = courant->suivant;
+    Element* element = copie;
+
+    while (courant != NULL){
+        Element* nouveau = (Element*)malloc(sizeof(Element));
+        nouveau->valeur = courant->valeur;
+        element->suivant = nouveau;
+        element = nouveau;
+        courant = courant->suivant;
+    }
+    element->suivant = NULL;
+    return copie;
+}
+
+
 void afficher_individu(Individu l){
     /*if (l == NULL){
         exit(EXIT_FAILURE);
@@ -57,4 +81,14 @@ void afficher_individu(Individu l){
         actuel = actuel->suivant;
     }
     printf("NULL\n");
+    printf("Valeur : %d\nQualite : %lf\n", binaire_to_decimal(l), qualite_individu(l));
+}
+
+void supprimer_individu(Individu indiv){
+    Element *element = indiv, *suivant;
+    while (element != NULL){
+        suivant = element->suivant;
+        free(element);
+        element = suivant;
+    }
 }

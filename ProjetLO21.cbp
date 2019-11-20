@@ -31,10 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Quicksort_on_quality.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Quicksort_on_quality.h" />
 		<Unit filename="binaire_to_decimal.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="binaire_to_decimal.h" />
+		<Unit filename="croisement.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="croisement.h" />
 		<Unit filename="define.h" />
 		<Unit filename="individu.c">
 			<Option compilerVar="CC" />
@@ -43,6 +51,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="population.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="population.h" />
 		<Unit filename="puissance.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -5,7 +5,7 @@
 	<time.h>
 	"define.h"
 
-1573332080 
+1573930012 
 
 1574256790 u:\mes documents\lo21\projetlo21\define.h
 
@@ -28,6 +28,8 @@
 	"binaire_to_decimal.h"
 	"qualite.h"
 	"Population.h"
+
+1574257354 n.h"
 
 1570633522 iste.h"
 
@@ -149,6 +151,8 @@
 1573384408 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/individu.c
 	"individu.h"
 
+1573930012 h"
+
 1573383486 /home/gregori/Documents/projects/projet-LO21/projetLO21/individu.h
 	<stdlib.h>
 	<stdio.h>
@@ -163,6 +167,8 @@
 	"binaire_to_decimal.h"
 	"qualite.h"
 
+1573930012 "
+
 1573383454 /home/gregori/Documents/projects/projet-LO21/projetLO21/binaire_to_decimal.h
 	<stdlib.h>
 	"define.h"
@@ -176,6 +182,8 @@
 	<stdlib.h>
 	"define.h"
 	"binaire_to_decimal.h"
+
+1573930012 o_decimal.h"
 
 1573384872 source:/home/gregori/Documents/projects/projet-LO21/projetLO21/qualite.c
 	"qualite.h"
@@ -233,4 +241,81 @@
 	<time.h>
 	"define.h"
 	"CrossTwoIndiv.h"
+
+1573930012 ndiv.h"
+
+1574284148 source:/home/gregori/Documents/projects/projet-LO21/binaire_to_decimal.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+	"puissance.h"
+	<math.h>
+
+1574284553 /home/gregori/Documents/projects/projet-LO21/define.h
+
+1574284148 /home/gregori/Documents/projects/projet-LO21/puissance.h
+	"define.h"
+
+1574288125 source:/home/gregori/Documents/projects/projet-LO21/individu.c
+	"individu.h"
+	"binaire_to_decimal.h"
+	"qualite.h"
+
+1574287899 /home/gregori/Documents/projects/projet-LO21/individu.h
+	<stdlib.h>
+	<stdio.h>
+	"define.h"
+
+1574284148 /home/gregori/Documents/projects/projet-LO21/binaire_to_decimal.h
+	<stdlib.h>
+	"define.h"
+
+1574284148 /home/gregori/Documents/projects/projet-LO21/qualite.h
+	<stdlib.h>
+	"define.h"
+	"binaire_to_decimal.h"
+
+1574284148 source:/home/gregori/Documents/projects/projet-LO21/puissance.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+
+1574284148 source:/home/gregori/Documents/projects/projet-LO21/qualite.c
+	"qualite.h"
+
+1574284148 source:/home/gregori/Documents/projects/projet-LO21/Quicksort_on_quality.c
+	<stdio.h>
+	<stdlib.h>
+	"individu.h"
+
+1574287490 source:/home/gregori/Documents/projects/projet-LO21/croisement.c
+	"croisement.h"
+
+1574287428 /home/gregori/Documents/projects/projet-LO21/croisement.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"define.h"
+	"individu.h"
+	"population.h"
+
+1574287273 source:/home/gregori/Documents/projects/projet-LO21/population.c
+	"population.h"
+
+1574287557 /home/gregori/Documents/projects/projet-LO21/population.h
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+	"individu.h"
+
+1574288197 source:/home/gregori/Documents/projects/projet-LO21/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"croisement.h"
+	"define.h"
+	"individu.h"
+	"binaire_to_decimal.h"
+	"qualite.h"
+	"population.h"
 
