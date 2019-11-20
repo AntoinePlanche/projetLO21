@@ -14,5 +14,12 @@ struct _element_s{
 
 typedef Element* Individu;
 
+typedef struct p_element{
+Individu valeur;
+struct p_element* suivant;
+}e_population;
+
+typedef e_population* Population;
+
 
 #endif // DEFINE_H_INCLUDED
