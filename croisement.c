@@ -30,9 +30,9 @@ void croiser_population(Population P, double probabilite){
         printf("%d, ", index);
         element = element->suivant;
     }
-    printf("\n");
 
     for (i = 0; i < taille / 2; i++){
         croiser_individus(attribution[i * 2], attribution[i * 2 + 1], probabilite);
     }
+    free(attribution);
 }

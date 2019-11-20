@@ -38,6 +38,7 @@ void selectionner_population(Population P, int nb){
     }
     i = 1;
     while (courant != NULL){
+        supprimer_individu(courant->valeur);
         courant->valeur = copier_individu(base->valeur);
         i += 1;
         if (i > nb){
