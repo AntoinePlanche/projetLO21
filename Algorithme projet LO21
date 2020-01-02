@@ -1,0 +1,12 @@
+Algorithme projet LO21
+
+Lexique InitializeIndiv:
+Individu est une liste de bit;
+
+
+Fonction InitializeIndiv(longueur: Entier) Individu
+Début:
+		
+
+
+	
