@@ -67,7 +67,6 @@ lexique binaire_to_decimal:
 Individu est une liste de bit
 p est un element de cette liste
 
-
 Fonction binaire_to_decimal (Individu:liste<bit>)<-Entier
 Debut
 result:entier<-0
@@ -80,7 +79,31 @@ Tant que p!=indéfini
 Fin Tant que
 binaire_to_decimal<-result
 Fin
+
+
 	
+lexique croiser_individus
+
+Individu est un type abstrait, il s'agit d'une liste de bit
+probabilité est un nombre reel compris entre 0 et 100
+aléatoire renvoie un nombre entier naturelle aléatoire
+
+Fonction croiser_individus(a:Individu,b:Individu,probabilite:reel positif)
+Debut
+ela:element<-tete(a)
+elb:element<-tete(b)
+tirage:reel positif<-aléatoire modulo 100
+temp:Bit
+Si (tirage<probabilité)
+	temp<-valeur(ela)
+	valeur(ela)<-valeur(elb)
+	valeur(elb)<-temp
+
+	ela<-suivant(ela)
+	elb<-suivant(elb)
+Fin Si
+FIn
+
 
 
 
