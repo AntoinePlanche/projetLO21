@@ -2,6 +2,8 @@
 #define DEFINE_H_INCLUDED
 
 #define LONGUEUR_INDIVIDU 8
+#define PROBA_CROISEMENT 0.5
+#define NB_SELECTION 4
 
 typedef unsigned char Bit;
 

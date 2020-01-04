@@ -251,12 +251,12 @@
 	"puissance.h"
 	<math.h>
 
-1574284553 /home/gregori/Documents/projects/projet-LO21/define.h
+1578156503 /home/gregori/Documents/projects/projet-LO21/define.h
 
 1574284148 /home/gregori/Documents/projects/projet-LO21/puissance.h
 	"define.h"
 
-1574288125 source:/home/gregori/Documents/projects/projet-LO21/individu.c
+1578156427 source:/home/gregori/Documents/projects/projet-LO21/individu.c
 	"individu.h"
 	"binaire_to_decimal.h"
 	"qualite.h"
@@ -299,16 +299,17 @@
 	"individu.h"
 	"population.h"
 
-1574288258 source:/home/gregori/Documents/projects/projet-LO21/population.c
+1578157136 source:/home/gregori/Documents/projects/projet-LO21/population.c
 	"population.h"
 
-1574287557 /home/gregori/Documents/projects/projet-LO21/population.h
+1578157171 /home/gregori/Documents/projects/projet-LO21/population.h
 	<stdio.h>
 	<stdlib.h>
 	"define.h"
 	"individu.h"
+	"qualite.h"
 
-1574288197 source:/home/gregori/Documents/projects/projet-LO21/main.c
+1578157154 source:/home/gregori/Documents/projects/projet-LO21/main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -318,4 +319,12 @@
 	"binaire_to_decimal.h"
 	"qualite.h"
 	"population.h"
+	"quicksort.h"
+
+1578157320 source:/home/gregori/Documents/projects/projet-LO21/quicksort.c
+	"quicksort.h"
+
+1578155647 /home/gregori/Documents/projects/projet-LO21/quicksort.h
+	"define.h"
+	"qualite.h"
 

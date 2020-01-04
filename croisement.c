@@ -27,7 +27,6 @@ void croiser_population(Population P, double probabilite){
         int index = rand() % taille;
         while (attribution[index] != NULL) index = (index + 1) % taille;
         attribution[index] = element->valeur;
-        printf("%d, ", index);
         element = element->suivant;
     }
 

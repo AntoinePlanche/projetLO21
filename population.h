@@ -5,11 +5,13 @@
 #include <stdlib.h>
 #include "define.h"
 #include "individu.h"
+#include "qualite.h"
 
-Population creer_population();
+Population creer_population(int taille);
 int taille_population(Population P);
 void selectionner_population(Population P, int nb);
 void afficher_population(Population P);
+Individu meilleur_individu(Population P);
 void supprimer_population(Population P);
 
 #endif // POPULATION_H_INCLUDED

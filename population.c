@@ -59,6 +59,20 @@ void afficher_population(Population P){
     }
 }
 
+Individu meilleur_individu(Population P){
+    Individu meilleur = P->valeur;
+    int qualite, maxqualite = qualite_individu(meilleur);
+    while (P->suivant != NULL){
+        P = P->suivant;
+        qualite = qualite_individu(P->valeur);
+        if (qualite > maxqualite){
+            meilleur = P->valeur;
+            maxqualite = qualite;
+        }
+    }
+    return meilleur;
+}
+
 void supprimer_population(Population P){
     PopElement *element = P, *suivant;
     while (element != NULL){

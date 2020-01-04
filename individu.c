@@ -36,6 +36,7 @@ static void _creer_recursif(int longueur, Element* p){
 }
 
 Individu creer_individu_recursif(int longueur){
+    if (longueur == 0) return NULL;
     Element* p = (Element*)malloc(sizeof(Element));
     if (p == NULL){
         printf("creer_individu_recursif : allocation failed\n");

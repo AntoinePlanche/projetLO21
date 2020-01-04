@@ -31,10 +31,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Quicksort_on_quality.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Quicksort_on_quality.h" />
 		<Unit filename="binaire_to_decimal.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -63,6 +59,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="qualite.h" />
+		<Unit filename="quicksort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="quicksort.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
