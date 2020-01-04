@@ -1,0 +1,37 @@
+  
+Algorithme projet LO21:
+
+Lexique InitializeIndiv:
+
+Individu est une liste de bit;
+aléatoire renvoie un nombre entier naturelle aléatoire
+
+Fonction InitializeIndivitératif(longueur: Entier)<-Individu
+
+Début
+l:liste <Bit> <- createliste()
+Si(longueur>0)
+	last: (element) <- CreateElement()
+	valeur(last)<-aléatoire modulo 2
+	suivant(last)<- indéfini
+	tete(l)<-last
+	newel:element <-indéfini
+	Pour i allant de 1 à longueur-1 avec un pas de 1
+		newel<-createElement()
+		valeur(newel)<-aléatoire modulo 2
+		suivant(newel)<- indéfini
+		suivant(last)<-newel
+		last<-suivant(last)
+	Fin Pour
+Fin Si
+InitializeIndiv<-l
+Fin
+
+
+
+
+
+
+
+
+	
