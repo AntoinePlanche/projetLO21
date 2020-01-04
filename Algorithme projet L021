@@ -6,7 +6,7 @@ Lexique InitializeIndiv:
 Individu est une liste de bit;
 aléatoire renvoie un nombre entier naturelle aléatoire
 
-Fonction InitializeIndivitératif(longueur: Entier)<-Individu
+Fonction InitializeIndivItératif(longueur: Entier)<-Individu
 
 Début
 l:liste <Bit> <- createliste()
@@ -24,7 +24,7 @@ Si(longueur>0)
 		last<-suivant(last)
 	Fin Pour
 Fin Si
-InitializeIndiv<-l
+InitializeIndivIteratif<-l
 Fin
 
 
