@@ -1,20 +1,20 @@
   
 Algorithme projet LO21:
 
-Lexique InitializeIndiv:
 
-Individu est une liste de bit;
+Lexique InitializeIndivIteratif:
+
+Individu est une liste de bit
 aléatoire renvoie un nombre entier naturelle aléatoire
 
 Fonction InitializeIndivItératif(longueur: Entier)<-Individu
-
 Début
-l:liste <Bit> <- createliste()
+Individu:liste <Bit> <- createListe()
 Si(longueur>0)
-	last: (element) <- CreateElement()
+	last:element <- CreateElement()
 	valeur(last)<-aléatoire modulo 2
 	suivant(last)<- indéfini
-	tete(l)<-last
+	tete(Individu)<-last
 	newel:element <-indéfini
 	Pour i allant de 1 à longueur-1 avec un pas de 1
 		newel<-createElement()
@@ -24,10 +24,38 @@ Si(longueur>0)
 		last<-suivant(last)
 	Fin Pour
 Fin Si
-InitializeIndivIteratif<-l
+InitializeIndivIteratif<-Individu
 Fin
 
 
+
+Lexique InitializeIndivrécursif:
+
+Individu est une liste de bit
+aléatoire renvoie un nombre entier naturelle aléatoire
+p est un element de la liste de bit
+
+Fonction _creer_recursif(longueur: Entier, Element p)
+Début
+Si(longueur>0)
+	next:element<-createElement()
+	valeur(next)<-aléatoire modulo 2
+	suivant(p)<-next
+	_creer_recursif(longueur-1,next)
+Sinon
+	suivant(p)<-indefini
+Fin
+ 
+Fonction  creer_individu_recursif(longueur : entier)<-Individu
+Debut
+Individu:liste<Bit><-createListe()
+newel:element <-CreateElement()
+valeur(newel)<-aléatoire modulo 2
+suivant(newel)<-indéfini
+tete(Individu)<-newel
+ _creer_recursif(longueur, newel)
+creer_individu_recursif<-Individu
+Fin
 
 
 
