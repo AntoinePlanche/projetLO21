@@ -9,17 +9,17 @@ aléatoire renvoie un nombre entier naturelle aléatoire
 
 Fonction InitializeIndivItératif(longueur: Entier)<-Individu
 Début
-Individu:liste <Bit> <- createListe()
+Individu:liste<Bit><- createListe()
 Si(longueur>0)
-	last:element <- CreateElement()
+	last:element<- CreateElement()
 	valeur(last)<-aléatoire modulo 2
 	suivant(last)<- indéfini
 	tete(Individu)<-last
-	newel:element <-indéfini
+	newel:element<-indéfini
 	Pour i allant de 1 à longueur-1 avec un pas de 1
 		newel<-createElement()
 		valeur(newel)<-aléatoire modulo 2
-		suivant(newel)<- indéfini
+		suivant(newel)<-indéfini
 		suivant(last)<-newel
 		last<-suivant(last)
 	Fin Pour
@@ -35,7 +35,7 @@ Individu est une liste de bit
 aléatoire renvoie un nombre entier naturelle aléatoire
 p est un element de la liste de bit
 
-Fonction _creer_recursif(longueur: Entier, Element p)
+Fonction _creer_recursif(longueur:Entier,Element p)
 Début
 Si(longueur>0)
 	next:element<-createElement()
@@ -46,19 +46,41 @@ Sinon
 	suivant(p)<-indefini
 Fin
  
-Fonction  creer_individu_recursif(longueur : entier)<-Individu
+Fonction  creer_individu_recursif(longueur:entier)<-Individu
 Debut
 Individu:liste<Bit><-createListe()
-newel:element <-CreateElement()
-valeur(newel)<-aléatoire modulo 2
-suivant(newel)<-indéfini
-tete(Individu)<-newel
- _creer_recursif(longueur, newel)
-creer_individu_recursif<-Individu
+Si(longueur>0)
+	newel:element <-CreateElement()
+	valeur(newel)<-aléatoire modulo 2
+	suivant(newel)<-indéfini
+	tete(Individu)<-newel
+ 	_creer_recursif(longueur,newel)
+	creer_individu_recursif<-Individu
+Sinon
+	creer_individu_recursif<-Individu
 Fin
 
 
 
+lexique binaire_to_decimal:
+
+Individu est une liste de bit
+p est un element de cette liste
+
+
+Fonction binaire_to_decimal (Individu:liste<bit>)<-Entier
+Debut
+result:entier<-0
+i:entier<-0
+p:element<-tete(Individu)
+Tant que p!=indéfini
+	result<-result+valeur(p)*puissance(2,i)
+	i<-i+1
+	p<-suivant(p)
+Fin Tant que
+binaire_to_decimal<-result
+Fin
+	
 
 
 
