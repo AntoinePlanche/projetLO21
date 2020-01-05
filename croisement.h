@@ -7,7 +7,10 @@
 #include "individu.h"
 #include "population.h"
 
+// Croise aléatoirement deux individus selon une certaine probabilité
 void croiser_individus(Individu a, Individu b, double probabilite);
+
+// Croise aléatoirement les individus de la population deux à deux
 void croiser_population(Population P, double probabilite);
 
 #endif // CROSSTWOINDIV_H_INCLUDED

@@ -4,6 +4,7 @@
 #include "define.h"
 #include "qualite.h"
 
+// Trie la population par qualité décroissante
 Population quicksort_population(Population p, int taille);
 
 #endif

@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "croisement.h"
+
 #include "define.h"
+#include "croisement.h"
 #include "individu.h"
-#include "binaire_to_decimal.h"
-#include "qualite.h"
 #include "population.h"
 #include "quicksort.h"
 
@@ -36,7 +35,7 @@ int main(int argc, char ** argv){
     int i;
     for (i = 0; i < nb_generations; i++){
         croiser_population(P, proba_croisement);
-        quicksort_population(P, taille);
+        P = quicksort_population(P, taille);
         selectionner_population(P, NB_SELECTION);
     }
     afficher_individu(meilleur_individu(P));
