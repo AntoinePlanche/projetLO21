@@ -10,3 +10,12 @@ Si vous avez installé gcc et make, vous pouvez simplement faire :
 Projet-LP25$ make
 ```
 
+### Lancer le programme
+
+Une fois compilé, il vous suffira d'exécuter :
+
+```
+ProjetLP21$ ./Projet-LP21
+```
+
+
